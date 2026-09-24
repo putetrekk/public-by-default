@@ -2,8 +2,425 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Public by Default</title>
+<link rel="stylesheet" href="https://unpkg.com/98.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+<div class="page">
+
+<h1>Public by Default</h1>
+
+<p class="tagline">If it's worth asking, it's worth sharing.</p>
+
+<div class="compare">
+
+  <div>
+    <h3>DM to jordan</h3>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Your chats</div>
+      </div>
+      <div class="window-body">
+        <div class="client">
+          <ul class="tree-view client-tree">
+            <li><details><summary>Channels</summary><ul><li>#billing</li><li>#general</li></ul></details></li>
+            <li>
+              <details open>
+                <summary>DMs</summary>
+                <ul>
+                  <li><span class="sel">jordan</span></li>
+                  <li>joel</li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+        <div class="chat-log client-pane">
+          <div class="msg"><span class="sender">you<span class="time">14:02</span></span>hey, i have multiple orders displaying EUR as currency even when the customer paid in other currencies, know what's going on?</div>
+          <div class="msg"><span class="sender">jordan<span class="time">15:47</span></span>i have no idea. have you asked joel?</div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Jordan was interrupted and you are none the wiser. The search continues...</p>
+  </div>
+
+  <div>
+    <h3>post in #billing</h3>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Your chats</div>
+      </div>
+      <div class="window-body">
+        <div class="client">
+          <ul class="tree-view client-tree">
+            <li>
+              <details open>
+                <summary>Channels</summary>
+                <ul>
+                  <li><span class="sel">#billing</span></li>
+                  <li>#general</li>
+                </ul>
+              </details>
+            </li>
+            <li><details><summary>DMs</summary><ul><li>jordan</li><li>joel</li></ul></details></li>
+          </ul>
+        <div class="chat-log client-pane">
+          <div class="msg"><span class="sender">you<span class="time">14:02</span></span>multiple orders are displaying EUR as currency even when the customer paid in other currencies. anyone know what's going on?</div>
+          <div class="thread">
+            <div class="msg"><span class="sender">laura<span class="time">14:10</span></span>yeah, that's a bug from tuesday's release. our fix ships tomorrow, i'll post here when it's out</div>
+            <div class="msg"><span class="sender">nika<span class="time">14:15</span></span>i've already gotten four tickets about this. i'll tell them it's fixed tomorrow 👍</div>
+          </div>
+          <div class="reactions"><span>➕ 2</span></div>
+        </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">The keyholder answers directly and everyone affected stays in the loop.</p>
+  </div>
+
+</div>
+
+<div class="window text-window">
+  <div class="title-bar">
+    <div class="title-bar-text">why.txt</div>
+  </div>
+  <div class="window-body">
+    <ul>
+      <li><b>Discoverable.</b> The next person can find the information through search (and maybe add to it).</li>
+      <li><b>The right person answers.</b> You don't need to know <i>exactly</i> who knows best.</li>
+      <li><b>No telephone game.</b> Invite people to the thread instead of explaining from scratch four times.</li>
+      <li><b>No shadow work.</b> The team sees what's pulling people away from what they planned.</li>
+      <li><b>Keep the <i>entire</i> team informed.</b> Works across floors, cities and even working from home!</li>
+      <li><b>Start off on right foot.</b> The longer a DM gets, the tougher it is to move it anywhere else.</li>
+    </ul>
+  </div>
+</div>
+
+<div class="window text-window">
+  <div class="title-bar">
+    <div class="title-bar-text">but...</div>
+  </div>
+  <div class="window-body">
+    <dl>
+      <dt>"I know who knows the answer, why should i bother the rest of their team?"</dt>
+      <dd>Tag them in the channel post! You'll still get your answer, and everyone else gets it for free. If they're away, busy or <i>wrong</i>, someone else can step in.</dd>
+      <dt>"I think my issue might be too basic to discuss in front of everyone."</dt>
+      <dd>Is it just an irrational fear, or does your workplace ridicule well-intended inquiries? If it's the former, you might just have the opportunity to break a similar barrier for someone else.</dd>
+      <dt>"If DMs are so useless, why do they exist at all?"</dt>
+      <dd>There are of course exceptions. HR issues, private conversations, planned surprises: DM away.</dd>
+    </dl>
+  </div>
+</div>
+
+<p class="closer">Public channels spread knowledge like wildfire. Use them!</p>
+
+<section id="examples">
+
+<p class="label">Three weeks later, Mia finds a stale order with an issue. Naturally, she checks if someone has had a similar issue.</p>
+
+<div class="compare">
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Search</div>
+      </div>
+      <div class="window-body">
+        <div class="search-row">
+          <input type="text" value="EUR currency" readonly aria-label="search">
+          <button>Search</button>
+        </div>
+        <div class="chat-log">
+          <p class="result-meta">#general · Mar 14, 2017</p>
+          <div class="msg"><span class="sender">bjørn<span class="time">11:20</span></span>We'll never need to support EUR currency</div>
+          <p class="end-of-results">End of results</p>
+        </div>
+      </div>
+    </div>
+    <p class="caption">The answer exists, somewhere in your DMs. So mia asks around.</p>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Mia's chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">jordan</p>
+          <div class="msg"><span class="sender">mia<span class="time">10:14</span></span>hey, got an old order showing EUR even though the customer paid in NOK. any idea?</div>
+          <div class="msg"><span class="sender">jordan<span class="time">11:30</span></span>hm, someone asked me that a few weeks ago… try joel?</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Jordan remembers the question, but only a select few have access to the answer (which might not even be up to date!).</p>
+  </div>
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Search</div>
+      </div>
+      <div class="window-body">
+        <div class="search-row">
+          <input type="text" value="EUR currency" readonly aria-label="search">
+          <button>Search</button>
+        </div>
+        <div class="chat-log">
+          <p class="result-meta">#billing · Sep 3</p>
+          <div class="msg"><span class="sender">you<span class="time">14:02</span></span>multiple orders are displaying EUR as currency even when the customer paid in other currencies. anyone know what's going on?</div>
+          <div class="thread">
+            <div class="msg"><span class="sender">laura<span class="time">14:10</span></span>yeah, that's a bug from tuesday's release. our fix ships tomorrow, i'll post here when it's out</div>
+            <div class="msg"><span class="sender">nika<span class="time">14:15</span></span>i've already gotten four tickets about this. i'll tell them it's fixed tomorrow 👍</div>
+            <div class="msg"><span class="sender">nika<span class="time">14:16</span></span>all currencies? and will old orders fix themselves?</div>
+            <div class="msg"><span class="sender">laura<span class="time">14:19</span></span>all of them. old orders need a resync, i'll add steps when the fix is out</div>
+            <div class="msg"><span class="sender">laura<span class="time">Sep 4</span></span>fix is live ✅ orders from before wednesday need a resync, see the billing runbook</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Mia found everything in seconds, fix and follow-up included.</p>
+  </div>
+
+</div>
+
+<p class="label">Jordan said to ask Joel. Joel said to ask Laura.</p>
+
+<div class="compare">
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Your chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">laura</p>
+          <div class="msg"><span class="sender">you<span class="time">16:30</span></span>hi! jordan sent me to joel, who sent me to you. some orders show EUR even though the customer paid in another currency?</div>
+          <div class="msg"><span class="sender">laura<span class="time">16:34</span></span>yeah, bug from tuesday's release. fix ships tomorrow</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Answer found, but now you're the messenger.</p>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Your chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">nika</p>
+          <div class="msg"><span class="sender">you<span class="time">16:41</span></span>fyi the EUR thing is a known bug, laura says it's fixed tomorrow</div>
+          <div class="msg"><span class="sender">nika<span class="time">16:43</span></span>all currencies? and will old orders fix themselves? i've got four customers waiting</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">...and you don't know the follow-ups.</p>
+  </div>
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Your chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">#billing › thread</p>
+          <div class="msg"><span class="sender">laura<span class="time">14:10</span></span>yeah, that's a bug from tuesday's release. our fix ships tomorrow, i'll post here when it's out</div>
+          <div class="msg"><span class="sender">nika<span class="time">14:15</span></span>i've already gotten four tickets about this. i'll tell them it's fixed tomorrow 👍</div>
+          <div class="msg"><span class="sender">nika<span class="time">14:16</span></span>all currencies? and will old orders fix themselves?</div>
+          <div class="msg"><span class="sender">laura<span class="time">14:19</span></span>all of them. old orders need a resync, i'll add steps when the fix is out</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Nika asks her follow-ups directly, and Laura answers them once.</p>
+  </div>
+
+</div>
+
+<p class="label">Meanwhile, Laura's afternoon.</p>
+
+<div class="compare">
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Laura's chats</div>
+      </div>
+      <div class="window-body">
+        <div class="client">
+          <ul class="tree-view client-tree">
+            <li><details><summary>Channels</summary><ul><li>#billing</li><li>#general</li></ul></details></li>
+            <li>
+              <details open>
+                <summary>DMs</summary>
+                <ul>
+                  <li class="unread">you <span class="badge">1</span></li>
+                  <li class="unread">nika <span class="badge">2</span></li>
+                  <li class="unread">jordan, joel, sam <span class="badge">5</span></li>
+                  <li class="unread">alex <span class="badge">1</span></li>
+                </ul>
+              </details>
+            </li>
+          </ul>
+          <div class="chat-log client-pane">
+            <div class="dm-row"><span class="dm-name">you</span><span class="dm-preview">hi! jordan sent me to joel, who sent me to you</span></div>
+            <div class="dm-row"><span class="dm-name">nika</span><span class="dm-preview">customers asking why their invoice says EUR?</span></div>
+            <div class="dm-row"><span class="dm-name">jordan +2</span><span class="dm-preview">joel: looping in laura re the EUR orders</span></div>
+            <div class="dm-row"><span class="dm-name">alex</span><span class="dm-preview">hey, got a sec?</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">All her colleagues asking the same question, with different words. Joel thought he'd get "everyone" in touch through a group chat.</p>
+  </div>
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Laura's chats</div>
+      </div>
+      <div class="window-body">
+        <div class="client">
+          <ul class="tree-view client-tree">
+            <li>
+              <details open>
+                <summary>Channels</summary>
+                <ul>
+                  <li><span class="sel">#billing</span></li>
+                  <li>#general</li>
+                </ul>
+              </details>
+            </li>
+            <li><details><summary>DMs</summary><ul><li>you</li><li>nika</li><li>jordan, joel, sam</li><li>alex</li></ul></details></li>
+          </ul>
+          <div class="chat-log client-pane">
+            <div class="msg"><span class="sender">laura<span class="time">14:10</span></span>yeah, that's a bug from tuesday's release. our fix ships tomorrow, i'll post here when it's out</div>
+            <div class="reactions"><span>👀 6</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Laura gets to answer once, and reach everyone.</p>
+  </div>
+
+</div>
+
+<p class="label">The next morning, Laura's lead checks in.</p>
+
+<div class="compare">
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Laura's chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">priya</p>
+          <div class="msg"><span class="sender">priya<span class="time">09:05</span></span>hey, is the refund flow still on track for friday?</div>
+          <div class="msg"><span class="sender">laura<span class="time">09:12</span></span>a bit behind, sorry. spent yesterday afternoon answering currency questions</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Laura lost an afternoon to passing notes back and forth.</p>
+  </div>
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Laura's chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">#billing</p>
+          <div class="msg"><span class="sender">laura<span class="time">09:02</span></span>refund flow is up for review 🎉 got a head start yesterday afternoon</div>
+          <div class="msg"><span class="sender">priya<span class="time">09:05</span></span>ahead of friday, nice!</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Laura got to chip away at the next task.</p>
+  </div>
+
+</div>
+
+<p class="label">and some DM that got long to find the culprit.</p>
+
+<div class="compare">
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Your chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">laura</p>
+          <p class="more">38 earlier messages</p>
+          <div class="msg"><span class="sender">laura<span class="time">17:48</span></span>ok so it's the rounding, not the rate lookup</div>
+          <div class="msg"><span class="sender">you<span class="time">17:49</span></span>we should really write this up somewhere</div>
+          <div class="msg"><span class="sender">laura<span class="time">17:55</span></span>yeah. tomorrow</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Laura never got around to it.</p>
+  </div>
+
+  <div>
+    <div class="window chat-window">
+      <div class="title-bar">
+        <div class="title-bar-text">Infinite Buffer's Workspace: Your chats</div>
+      </div>
+      <div class="window-body">
+        <div class="chat-log">
+          <p class="pane-head">#billing › thread</p>
+          <p class="more">38 earlier replies</p>
+          <div class="msg"><span class="sender">laura<span class="time">17:48</span></span>ok so it's the rounding, not the rate lookup</div>
+          <div class="msg"><span class="sender">joel<span class="time">17:51</span></span>oh, that explains the refund totals too</div>
+        </div>
+      </div>
+    </div>
+    <p class="caption">Even if it didn't get a proper writeup, it remained searchable for anyone.</p>
+  </div>
+
+</div>
+
+</section>
+
+</div>
+
+<footer>
+<p>Inspired by other pages nudging workplace communication in the right direction, like
+<a href="https://nohello.net" target="_blank" rel="noopener">nohello.net</a>,
+<a href="https://xyproblem.info" target="_blank" rel="noopener">xyproblem.info</a> and
+<a href="https://noslopgrenade.com" target="_blank" rel="noopener">noslopgrenade.com</a>.
+Source on <a href="https://github.com/putetrekk/public-by-default" target="_blank" rel="noopener">GitHub</a>.</p>
+<p>Styled with <a href="https://unpkg.com/98.css" target="_blank" rel="noopener">98.css</a> (MIT licensed).
+Font "MS Sans Serif" by <a href="https://fontstruct.com/fontstructions/show/1384746" target="_blank" rel="noopener">lou</a>, <a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noopener">CC BY-SA 3.0</a>.</p>
+</footer>
+<script>
+(function () {
+  var section = document.getElementById("examples");
+  if (!section || !("IntersectionObserver" in window)) return;
+  if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  var items = section.children;
+  var start = function () {
+    window.removeEventListener("scroll", start);
+    for (var i = 0; i < items.length; i++) observer.observe(items[i]);
+  };
+  var observer = new IntersectionObserver(function (entries) {
+    entries.forEach(function (entry) {
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("shown");
+      observer.unobserve(entry.target);
+    });
+  }, { rootMargin: "0px 0px -10% 0px" });
+  for (var i = 0; i < items.length; i++) {
+    items[i].classList.add("reveal");
+  }
+  // wait for the first scroll, so rows peeking in at the bottom don't animate on load
+  if (document.documentElement.scrollHeight <= window.innerHeight) start();
+  else window.addEventListener("scroll", start, { passive: true });
+})();
+</script>
 </body>
 </html>

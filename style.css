@@ -1,0 +1,306 @@
+body {
+  background: #008080;
+  font-family: "Pixelated MS Sans Serif", Arial, sans-serif;
+  font-size: 11px;
+  padding: 2rem 1rem 1rem;
+  -webkit-font-smoothing: none;
+  -moz-osx-font-smoothing: grayscale;
+  font-smooth: never;
+  text-rendering: optimizeSpeed;
+}
+
+.page {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 44px;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+}
+
+.tagline {
+  color: #fff;
+  font-weight: bold;
+}
+
+.label {
+  color: #fff;
+  font-weight: bold;
+  margin: 1.5rem 0 0.5rem;
+  text-align: center;
+}
+
+.caption {
+  color: #fff;
+  text-align: center;
+  margin: 6px 0 0;
+}
+
+.closer {
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  margin: 1.75rem 0 0;
+}
+
+/* side-by-side comparison rows */
+.compare {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.compare > div {
+  flex: 1;
+  min-width: 260px;
+  max-width: 360px;
+}
+
+.compare h3 {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 11px;
+}
+
+.compare + .label {
+  margin-top: 3rem;
+}
+
+.caption + .window {
+  margin-top: 12px;
+}
+
+/* chat windows */
+.chat-window {
+  width: 100%;
+}
+
+.chat-log {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 6px;
+  background: #fff;
+  border: 1px solid #808080;
+  margin-bottom: 6px;
+}
+
+.pane-head {
+  font-weight: bold;
+  margin: 0;
+  padding: 0 4px 4px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.msg {
+  padding: 2px 4px;
+  line-height: 1.35;
+}
+
+.msg .sender {
+  display: block;
+  font-weight: bold;
+  color: #000080;
+}
+
+.time {
+  font-weight: normal;
+  color: #808080;
+  margin-left: 6px;
+}
+
+.thread {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 2px 0 0 12px;
+  padding-left: 8px;
+  border-left: 2px solid #c0c0c0;
+}
+
+.reactions {
+  margin: 2px 0 0 4px;
+}
+
+.reactions span {
+  display: inline-block;
+  padding: 0 4px;
+  margin-right: 4px;
+  background: #f0f0f0;
+  border: 1px solid #c0c0c0;
+}
+
+.more {
+  color: #000080;
+  text-align: center;
+  margin: 0;
+}
+
+/* chat client: tree-view sidebar + pane */
+.client {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.client-tree {
+  flex: 0 0 auto;
+  min-width: 96px;
+}
+
+.client-tree .unread {
+  font-weight: bold;
+}
+
+.client-tree .badge {
+  margin-left: 4px;
+}
+
+.client-tree .sel {
+  background: #000080;
+  color: #fff;
+  padding: 0 2px;
+}
+
+.client-pane {
+  flex: 1;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+/* inbox */
+.dm-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.dm-row:last-child {
+  border-bottom: none;
+}
+
+.dm-name {
+  font-weight: bold;
+  flex: 0 0 52px;
+}
+
+.dm-preview {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.badge {
+  background: #c00000;
+  color: #fff;
+  font-weight: bold;
+  padding: 0 5px;
+}
+
+/* search */
+.search-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.search-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.result-meta {
+  color: #808080;
+  padding: 0 4px;
+}
+
+.end-of-results {
+  color: #808080;
+  text-align: center;
+  margin: 8px 0 0;
+  padding-top: 6px;
+  border-top: 1px solid #e0e0e0;
+}
+
+/* why / but */
+.text-window {
+  margin-top: 2rem;
+}
+
+.text-window .window-body {
+  line-height: 1.5;
+}
+
+.text-window ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.text-window li {
+  margin-bottom: 6px;
+}
+
+.text-window dt {
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.text-window dt:first-child {
+  margin-top: 0;
+}
+
+.text-window dd {
+  margin: 2px 0 0 0;
+}
+
+/* additional examples, faded in on scroll */
+#examples {
+  margin-top: 3rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.shown {
+  opacity: 1;
+  transform: none;
+}
+
+footer {
+  margin-top: 3rem;
+  padding: 8px 4px;
+  text-align: center;
+  color: #000;
+  background: #c0c0c0;
+  border-top: 1px solid #000;
+}
+
+footer p {
+  margin: 4px 0;
+}
+
+footer a {
+  color: #000080;
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 520px) {
+  .client {
+    flex-direction: column;
+  }
+}
